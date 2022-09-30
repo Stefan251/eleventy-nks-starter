@@ -1,0 +1,60 @@
+body {
+    /* Change default typefaces here */
+    font-family: 'Noto Sans', sans-serif;
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+    color: var(--gray-7);
+}
+
+p {
+    margin: 1.5rem 0;
+}
+
+ul,
+ol {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+ul li,
+ol li {
+    line-height: 1.8rem;
+}
+
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+blockquote {
+    line-height: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    margin: 1.3rem 0;
+
+}
+
+h1 {
+    font-size: clamp(1.3rem, 2.5vw, 2.5rem);
+    // line-height: 4.5rem;
+}
+
+h2 {
+    font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+    // line-height: 2.5rem;
+
+}

@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+hr {
+    border: 0;
+    border-bottom: 1px dashed var(--gray-4);
+    background: var(--gray-4);
+    margin: 2rem 0 1.5rem;
+}

@@ -1,0 +1,42 @@
+<header class="l-header">
+        <nav>
+            {# <ul>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/scales">Scales</a>
+                </li>
+                <li>
+                    <a href="/practise">Practise</a>
+                </li>
+                <li>
+                    <a href="/solkattu">Solkattu</a>
+                </li>
+                <li>
+                    <a href="/solmisation">Solmisation</a>
+                </li>
+                <li>
+                    <a href="/lessons">Lessons</a>
+                </li>
+                <li>
+                    <a href="/episodes">10 Minute Jazz</a>
+                </li>
+                <li>
+                    <a href="/discover-doublebass">Discover Doublebass</a>
+                </li>
+            </ul> #}
+
+            <ul class="nav">
+      {%- for entry in collections.all | eleventyNavigation %}
+        <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
+      {%- endfor %}
+      </ul>
+
+           
+
+
+
+            
+        </nav>        
+	</header>

@@ -1,0 +1,65 @@
+.l-header {
+    width: 100%;
+    margin-inline: auto;
+    border-bottom: .5px solid var(--gray-4);
+    background-color: var(--gray-3);
+    padding-block: .5rem;
+}
+
+.l-header__nav-darkmode {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.l-header__logo {
+    margin-left: 1rem;
+}
+
+.l-header__nav {
+    margin-right: 1rem;
+}
+
+.l-header__nav-darkmode {
+    margin-right: 1rem;
+}
+
+.l-main {
+    // max-width: 1200px;
+    width: min(100% - 2rem, 50rem);
+    /*800px */
+    width: min(100% - 2rem, 75rem);
+    /*1200px */
+    margin-inline: auto;
+    padding: 4rem 0.5rem;
+}
+
+.l-footer {
+    width: 100%;
+    margin-inline: auto;
+
+    text-align: center;
+    padding: 1rem 0;
+    border-top: .5px solid var(--gray-4);
+    background-color: var(--gray-2);
+
+}
+
+/* sticky footer */
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    /* damit erstreckt sich main ueber die gesamte verfuegbare hoehe */
+}
+
+/* sticky footer */

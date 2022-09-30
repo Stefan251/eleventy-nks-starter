@@ -1,0 +1,73 @@
+// header {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+// }
+
+
+.polygon {
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+}
+
+.galerie {
+    display: grid;
+    /*
+grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); */
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    list-style-type: none;
+    gap: 10px;
+}
+
+.galerie img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+.galerie li,
+.galerie img {
+    margin: 0;
+    padding: 0;
+}
+
+.galerie a {
+    color: #333;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
+}
+
+details .toc {
+    /* wird von open probs normalize uberschrieben */
+    background-color: green !important;
+}
+
+.box {
+    border: 2px solid silver;
+    margin: 2rem;
+}
+
+blockquote {
+    background-color: var(--gray-1);
+    border-left: 10px solid var(--gray-3);
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+    color: var(--gray-3);
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+
+blockquote p {
+    display: inline;
+}
+
+cite {
+    text-align: right;
+    display: block;
+}
