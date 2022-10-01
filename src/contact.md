@@ -13,3 +13,4 @@ eleventyNavigation:
 Line 1
 Line 2
 Line 3
+![mein alt-text](/images/2021-02-20_082753.jpg)
