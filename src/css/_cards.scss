@@ -47,6 +47,11 @@
     max-width: 80%;
 }
 
+.card__header a {
+    color: var(--gray-7);
+    text-decoration: none;
+}
+
 .card__link a:hover {
     background-color: var(--gray-2);
 }

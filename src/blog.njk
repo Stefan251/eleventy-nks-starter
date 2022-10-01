@@ -13,13 +13,14 @@ eleventyNavigation:
   <div class="card">
 
     <div class="card__header"> 
-    <h2>{{ post.data.title }}</h2>
+    <a href="{{ post.url | url }}"><h2>{{ post.data.title }}</h2></a>
     </div><!-- card__header-->
 
     <div class="card__description">
     <p>
     {{ post.data.inhalt }}
     </p>
+    <img src="{{post.data.image}}" alt="{{post.data.imageAlt}}" class="hallo" />
     </div><!-- card__description -->
 
     <div class="card__link">
