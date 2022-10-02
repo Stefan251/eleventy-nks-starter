@@ -20,7 +20,7 @@ eleventyNavigation:
     <p>
     {{ post.data.inhalt }}
     </p>
-    <img src="{{post.data.image}}" alt="{{post.data.imageAlt}}" class="hallo" />
+    <img src="{{post.data.image}}" alt="{{post.data.imageAlt}}" class="{{ post.data.imageTitle  }}" />
     </div><!-- card__description -->
 
     <div class="card__link">
