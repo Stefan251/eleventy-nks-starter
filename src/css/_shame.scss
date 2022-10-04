@@ -4,6 +4,24 @@
 //     justify-content: space-between;
 // }
 
+.pagination-container {
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+    gap: 25px;
+}
+
+.prev-next {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    list-style-type: none;
+}
+
+.pagination-container img {
+    aspect-ratio: 4 / 3;
+}
 
 .polygon {
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0 50%);

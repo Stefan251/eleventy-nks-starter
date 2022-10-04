@@ -4,7 +4,7 @@ layout: "base.njk"
 eleventyNavigation:
   key: contact
   title: Contact
-  order: 16
+  order: 20
 ---
 
 

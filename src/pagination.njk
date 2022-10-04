@@ -1,0 +1,39 @@
+---
+title: "Pagination"
+layout: "base.njk"
+pagination:
+  data: skates
+  size: 2
+  alias: skates
+eleventyNavigation:
+  key: pagination
+  title: Pagination
+  order: 16
+---
+
+<div class="pagination-container">
+    {% for skate in skates %}
+        <div>
+            <h2>{{ skate.title }}</h2>
+            <img src="{{ skate.thumbnail }}" alt="{{ skate.title }}" loading="lazy" />
+            <p>
+                {{ skate.description }}
+            </p>
+        </div>
+    {% endfor %}
+</div>
+
+<div>
+
+    <ul class="prev-next">
+        <li>{% if pagination.href.previous %}
+            <a href="{{ pagination.href.previous }}">Prev</a>
+            {% endif %}</li>
+        {%- for pageEntry in pagination.pages %}
+            <li><a href="{{ pagination.hrefs[ loop.index0 ] }}">{{ loop.index }}</a></li>
+        {%- endfor %}
+        <li>{% if pagination.href.next %}
+            <a href="{{ pagination.href.next }}">Next</a>
+            {% endif %}</li>
+    </ul>
+</div>

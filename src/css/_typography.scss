@@ -7,6 +7,13 @@ body {
     color: var(--gray-7);
 }
 
+.overflow-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-clamp: 3;
+}
+
 p {
     margin: 1.5rem 0;
 }
