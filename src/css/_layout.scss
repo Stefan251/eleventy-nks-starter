@@ -30,7 +30,15 @@
 
 .l-header__nav {
     margin-right: 1.5rem;
+
+    @include flex-container-x;
 }
+
+.l-theme-switcher {
+    display: flex;
+    margin: 0 1.5rem;
+}
+
 
 
 .l-main {
