@@ -1,25 +1,25 @@
 :root {
 
     /* light color scheme */
-    --bg--light: var(--cyan-1);
-    --txt--light: var(--cyan-8);
-    --muted--light: var(--cyan-6);
-    --accent--light: var(--cyan-4);
-    --secondary--light: var(--cyan-6);
+    --bg--light: var(--gray-1);
+    --txt--light: var(--gray-7);
+    --muted--light: var(--gray-6);
+    --accent--light: var(--gray-2);
+    --secondary--light: var(--gray-6);
 
     /* dark color scheme */
-    --bg--dark: var(--cyan-8);
-    --txt--dark: var(--cyan-2);
-    --muted--dark: var(--cyan-4);
-    --accent--dark: var(--cyan-3);
-    --secondary--dark: var(--cyan-1);
+    --bg--dark: var(--gray-7);
+    --txt--dark: var(--gray-2);
+    --muted--dark: var(--lime-4);
+    --accent--dark: var(--gray-8);
+    --secondary--dark: var(--lime-4);
 
     /* custom color scheme */
-    --bg--custom: var(--gray-8);
-    --txt--custom: var(--gray-2);
-    --muted--custom: var(--gray-8);
-    --accent--custom: var(--gray-3);
-    --secondary--custom: var(--gray-8);
+    --bg--custom: var(--blue-8);
+    --txt--custom: var(--blue-1);
+    --muted--custom: var(--blue-2);
+    --accent--custom: var(--blue-9);
+    --secondary--custom: var(--blue-3);
 }
 
 @media (prefers-color-scheme: light) {
@@ -78,27 +78,48 @@ body,
     color: var(--txt);
 }
 
+.card__header {
+    background-color: var(--accent);
+    color: var(--secondary);
+}
+
+.card__header a {
+    background-color: var(--accent);
+    color: var(--secondary);
+}
+
 
 .l-footer,
 .l-header {
     background-color: var(--accent);
     color: var(--txt);
+
+}
+
+.l-header {
+
+    border-bottom: .5px solid var(--secondary);
+}
+
+
+h1 {
+    color: var(--muted);
 }
 
 nav {
 
     li {
         a:hover {
-            color: var(--txt);
+            color: var(--muted);
         }
 
         a:link,
         a:visited {
-            color: var(--txt);
+            color: var(--muted);
         }
 
         .nav-item-active a {
-            color: var(--txt);
+            color: red !important;
         }
     }
 }
@@ -151,6 +172,7 @@ nav {
     background-color: var(--accent);
     border: none;
     color: var(--bg);
+    color: var(--txt);
     border-radius: 0.25em;
     padding: .3em 1.1em;
     cursor: pointer;
