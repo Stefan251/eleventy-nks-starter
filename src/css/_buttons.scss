@@ -3,6 +3,7 @@
     border-radius: 5px;
     padding: 8px 20px;
     margin: 5px;
+    text-decoration: none;
 
     &:hover {
         transform: scale(.98);
@@ -12,6 +13,8 @@
 .btn-primary {
     @extend %btn;
     background-color: lighten(red, 30%);
+    background-color: var(--accent);
+    color: var(--txt);
 }
 
 .btn-secondary {

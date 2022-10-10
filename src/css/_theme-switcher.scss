@@ -118,11 +118,14 @@ nav {
             color: var(--muted);
         }
 
-        .nav-item-active a {
-            color: red !important;
-        }
+
     }
 }
+
+.nav-item-active a {
+    color: var(--txt) !important;
+}
+
 
 .text-accent {
     color: var(--accent);

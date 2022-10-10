@@ -30,10 +30,10 @@ eleventyNavigation:
             <a class="btn-primary" href="{{ pagination.href.previous }}">Prev</a>
             {% endif %}</li>
         {%- for pageEntry in pagination.pages %}
-            <li><a href="{{ pagination.hrefs[ loop.index0 ] }}">{{ loop.index }}</a></li>
+            <li><a class="btn-primary" href="{{ pagination.hrefs[ loop.index0 ] }}">{{ loop.index }}</a></li>
         {%- endfor %}
         <li>{% if pagination.href.next %}
-            <a href="{{ pagination.href.next }}">Next</a>
+            <a class="btn-primary" href="{{ pagination.href.next }}">Next</a>
             {% endif %}</li>
     </ul>
 </div>
